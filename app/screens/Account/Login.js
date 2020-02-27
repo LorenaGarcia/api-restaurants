@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, View, ScrollView, Text, Image } from 'react-native'
 import { Divider } from 'react-native-elements'
+import Loginform from '../../components/Account/LoginForm'
 
 export default function Login(props) {
     const { navigation } = props
@@ -12,7 +13,7 @@ export default function Login(props) {
                 resizeMode="contain"
             />
             <View style={styles.viewContainer}>
-                <Text>Form Login...</Text>
+                <Loginform />
                 {/* <Text>Create Account...</Text> */}
                 <CreateAccount navigation={navigation} />
             </View>
